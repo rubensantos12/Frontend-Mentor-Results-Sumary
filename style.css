@@ -5,6 +5,11 @@
   --clr-verbal: hsl(166,100%,37%);
   --clr-visual: hsl(234, 85%, 45%);
 
+  --clr-reaction-background: hsla(0,100%,67%,0.1);
+  --clr-memory-background: hsla(39,100%,56%, 0.1);
+  --clr-verbal-background: hsla(166,100%,37%, 0.1);
+  --clr-visual-background: hsla(234, 85%, 45%, 0.1);
+
   --clr-background-1: hsl(252,100%,67%);
   --clr-background-2: hsl(241, 81%, 54%);
 
@@ -24,6 +29,7 @@
 
   --fs: 18px;
 
+  --width-500: 500px;
 }
 
 
@@ -66,6 +72,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -120,8 +127,9 @@ select {
   display: inline;
 }
 
-.reaction-result_b {
-  padding-left: 70px;
+
+.left-result-panel {
+  background: linear-gradient(var(--clr-background-1), var(--clr-background-2));
 }
 
 /* Utility classes */
@@ -130,16 +138,32 @@ select {
   color: var(--clr-reaction);
 }
 
+.clr-reaction-background {
+  background-color: var(--clr-reaction-background);
+}
+
 .clr-memory {
   color: var(--clr-memory);
+}
+
+.clr-memory-background {
+  background-color: var(--clr-memory-background);
 }
 
 .clr-verbal {
   color: var(--clr-verbal);
 }
 
+.clr-verbal-background {
+  background-color: var(--clr-verbal-background);
+}
+
 .clr-visual {
   color: var(--clr-visual);
+}
+
+.clr-visual-background {
+  background-color: var(--clr-visual-background);
 }
 
 .bg-clr-1{
@@ -184,4 +208,9 @@ select {
 
 .fw-bold {
   font-weight: var(--fw-bold);
+}
+
+.width-500{
+  display: flex;
+  width: var(--width-500);
 }
