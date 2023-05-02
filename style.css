@@ -117,7 +117,7 @@ li {
   margin: 0rem 0rem 1.25rem 0rem;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,6 +213,7 @@ body{
 .memory-image {
   margin-left: 0.625rem;
 }
+
 .visual-result_b,
 .verbal-result_b,
 .reaction-result_b,
@@ -271,7 +272,7 @@ body{
   }
 
   .button:hover {
-    background:  var(--clr-neutral-400);
+    background: var(--clr-neutral-400);
   }
 
   .right-result-panel {
@@ -289,12 +290,12 @@ body{
   .memory-result_b {
     margin-left: auto;
   }
-  
+
   .visual-result_b,
   .verbal-result_b {
     margin-left: auto;
   }
-  
+
 
   .button {
     display: block;
