@@ -213,15 +213,11 @@ body{
 .memory-image {
   margin-left: 0.625rem;
 }
-
+.visual-result_b,
+.verbal-result_b,
 .reaction-result_b,
 .memory-result_b {
-  margin-left: 31%;
-}
-
-.visual-result_b,
-.verbal-result_b {
-  margin-left: 36%;
+  margin-left: auto;
 }
 
 .button {
@@ -275,6 +271,10 @@ body{
     margin-right: auto;
   }
 
+  .button:hover {
+    background:  var(--clr-neutral-400);
+  }
+
   .right-result-panel {
     display: flexbox;
     justify-content: center;
@@ -285,6 +285,17 @@ body{
     padding-right: 40px;
     margin-right: auto;
   }
+
+  .reaction-result_b,
+  .memory-result_b {
+    margin-left: auto;
+  }
+  
+  .visual-result_b,
+  .verbal-result_b {
+    margin-left: auto;
+  }
+  
 
   .button {
     margin-left: auto;
