@@ -27,9 +27,9 @@
   --fw-semi-bold: 700;
   --fw-bold: 800;
 
-  --fs: 18px;
+  --fs: 1.125rem;
 
-  --width-200: 200px;
+  --width-200: 12.5rem;
 }
 
 /* Box sizing rules */
@@ -114,7 +114,13 @@ select {
 }
 
 li {
-  margin: 0px 0px 20px 0px;
+  margin: 0rem 0rem 1.25rem 0rem;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec-div {
@@ -124,23 +130,23 @@ li {
 .left-header {
   color: var(--clr-neutral-300);
   font-size: var(--fs);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .result-circle {
-  width: 170px;
-  height: 170px;
+  width: 10.625rem;
+  height: 10.625rem;
   background: linear-gradient(var(--clr-background-circle-1), var(--clr-background-circle-2));
   border-radius: 50%;
-  margin-left: 22%;
-  margin-right: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .score {
   color: var(--clr-neutral-100);
-  font-size: 64px;
-  margin-bottom: -20px;
+  font-size: 4rem;
+  margin-bottom: auto;
 }
 
 .max-score {
@@ -149,9 +155,9 @@ li {
 }
 
 .left-second-header {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: var(--clr-neutral-100);
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 
 .score-resume {
@@ -176,27 +182,36 @@ li {
 .visual-result_b,
 .visual-image {
   display: inline;
-  padding: 10px 5px;
+  padding: 0.625rem 0.313rem;
 }
 
 .left-result-panel {
-  height: 420px;
-  width: 300px;
+  height: 26.25rem;
+  width: 18.75rem;
   border-radius: 20px;
   background: linear-gradient(var(--clr-background-1), var(--clr-background-2));
 }
 
 .summary {
-  margin-top: 20px;
-  margin-left: -180px;
+  margin-top: 1.25rem;
+  margin-left: -11.25rem;
   font-size: var(--fs);
+}
+
+.clr-memory-background,
+.clr-reaction-background,
+.clr-verbal-background,
+.clr-visual-background {
+  display: flex;
+  border-radius: 7px;
+  width: 18.75rem;
 }
 
 .visual-image,
 .verbal-image,
 .reaction-image,
 .memory-image {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .reaction-result_b,
@@ -210,27 +225,35 @@ li {
 }
 
 .button {
-  width: 300px;
+  width: 18.75rem;
   border-radius: 30px;
-  height: 50px;
-  margin-left: 12%;
-  margin-top: 15px;
+  height: 3.5rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
   background-color: var(--clr-neutral-400);
   color: var(--clr-neutral-100);
   font-size: 16px;
 }
 
+.button:hover {
+  background: linear-gradient(var(--clr-background-1), var(--clr-background-2));
+}
 
 @media(max-width: 640px) {
 
-  .main-div {
+  body {
     display: block;
-    justify-content: center;
-    align-items: center;
+  }
+
+  .sec-div {
+    float: none;
   }
 
   .left-result-panel {
-    margin-top: -120px;
+    border-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 25rem;
     width: 100%;
   }
 
@@ -248,7 +271,19 @@ li {
   .clr-reaction-background,
   .clr-verbal-background,
   .clr-visual-background {
-    width: 500px;
+    width: auto;
+    margin-right: auto;
+  }
+
+  .right-result-panel {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result-list {
+    padding-right: 40px;
+    margin-right: auto;
   }
 
   .button {
@@ -256,6 +291,8 @@ li {
     margin-right: auto;
   }
 }
+
+
 
 /* Utility classes */
 
@@ -333,9 +370,4 @@ li {
 
 .fw-bold {
   font-weight: var(--fw-bold);
-}
-
-.width-500 {
-  display: flex;
-  width: 300px;
 }
