@@ -1,5 +1,5 @@
 
-# Frontend Mentor Results Sumary
+# Frontend Mentor Results Summary
 
 Challenge from FrontendMentor, Newbie level.
 
